@@ -1,0 +1,31 @@
+{
+  "name": "criando-api-restful-com-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "tsx --watch --no-warnings src/server.ts",
+    "lint": "eslint src --ext .ts",
+    "knex": "node --no-warnings --import tsx ./node_modules/.bin/knex",
+    "lint:fix": "eslint src --ext .ts --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^2.1.0",
+    "@types/node": "^20.11.5",
+    "eslint": "^8.56.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@fastify/cookie": "^9.3.1",
+    "dotenv": "^16.3.2",
+    "fastify": "^4.25.2",
+    "knex": "^3.1.0",
+    "sqlite3": "^5.1.7",
+    "zod": "^3.22.4"
+  }
+}
