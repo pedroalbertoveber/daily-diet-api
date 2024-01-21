@@ -3,5 +3,24 @@ Content-Type: application/json
 
 {
   "name": "Pedro Alberto Veber Berna",
-  "email": "pedro.veber@outlook.com"
+  "email": "pedrovberna@outlook.com"
 }
+
+###
+POST http://localhost:3333/meals
+Content-Type: application/json
+
+{
+  "name": "Café da manhã",
+  "description": "Pão com ovo frito na manteiga com café preto sem açúcar",
+  "isOnDiet": true,
+  "datetime": "2024-01-21T08:00:00.000Z"
+}
+
+###
+GET http://localhost:3333/meals
+Content-Type: application/json
+
+###
+GET http://localhost:3333/meals/44672cc0-1988-460a-add9-d7d737741242
+Content-Type: application/json
